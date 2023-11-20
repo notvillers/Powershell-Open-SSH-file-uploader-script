@@ -6,12 +6,8 @@ It installs the [Posh-SSH](https://github.com/darkoperator/Posh-SSH) module if i
 
 To run:
 
-```
-powershell ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
-```
+```powershell ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"```
 
-or for Powershell 7:
-
-```
-pwsh ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
-```
+> [!NOTE]
+> For Powershell 7:
+> ```pwsh ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"```
