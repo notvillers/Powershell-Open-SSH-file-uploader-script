@@ -10,4 +10,6 @@ To run:
 
 > [!NOTE]
 > For Powershell 7:
-> ```pwsh ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"```
+> ```
+> pwsh ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
+> ```
