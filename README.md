@@ -10,7 +10,7 @@ To run:
 powershell ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
 ```
 
-> [!For Powershell 7]
+> [!Note]
 > For Powershell 7:
 > ```
 > pwsh ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
