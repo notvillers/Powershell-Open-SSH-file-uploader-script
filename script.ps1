@@ -1,4 +1,4 @@
-# Checks the Posh-SSH module, if not found then installs it
+# Parameters
 param (
     [Parameter()]
     [string]$hostname,
@@ -12,6 +12,7 @@ param (
     [string]$destination
 )
 
+# Checks the Posh-SSH module, if not found then installs it
 if (-not (Get-Module Posh-SSH -ListAvailable)) {
     Write-Host "Posh-SSH not found, installing NuGet package provider and Posh-SSH"
     Install-PackageProvider NuGet -Force
