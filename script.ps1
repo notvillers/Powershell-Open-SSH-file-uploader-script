@@ -12,17 +12,17 @@ Import-Module Posh-SSH
 $server = $args[0]
 $username = $args[1]
 $password = $args[2] | ConvertTo-SecureString -AsPlainText -Force
-$FilePath = $args[3]
-$SFTPPath = $args[4]
+$filepath = $args[3]
+$sftppath = $args[4]
 
 # Checking the $FilePath
-if (Test-Path -path $FilePath) {
+if (Test-Path -path $filepath) {
     # Creates a credential
     $credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $username,$password
     # Creates a session
     $session = New-SFTPSession -ComputerName $server -Credential $credential -AcceptKey
     # Copies the source item to the destination
-    Set-SFTPItem -Session $session.SessionID -Destination $SFTPPath -Path $FilePath -verbose -Force
+    Set-SFTPItem -Session $session.SessionID -Destination $sftppath -Path $filepath -verbose -Force
 } else {
-    Write-Host $FilePath + " not found."
+    Write-Host "$filepath not found."
 }
