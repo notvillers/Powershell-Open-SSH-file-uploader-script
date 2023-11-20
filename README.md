@@ -12,7 +12,7 @@ or for Powershell 7:
 
 ```pwsh ./sftp.ps1 servername username password source_file destination```
 
-
+```
             #########################
            ####    #################
           ######    ###############
@@ -23,3 +23,4 @@ or for Powershell 7:
      #######    ##############
     ######    #####      ####
    #########################
+```
