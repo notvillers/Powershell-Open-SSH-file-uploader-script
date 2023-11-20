@@ -13,5 +13,5 @@ powershell ./sftp.ps1 -hostanme "servername" -login "username" -password "passwo
 or for Powershell 7:
 
 ```
-pwsh ./sftp.ps1 ./sftp.ps1 -hostanme "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
+pwsh ./sftp.ps1 -hostanme "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
 ```
