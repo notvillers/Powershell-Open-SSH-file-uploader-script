@@ -4,7 +4,9 @@ It installs the [Posh-SSH](https://github.com/darkoperator/Posh-SSH) module if i
 # Uploads a source file to a destination folder via sftp
 
 To run:
+
 ```powershell ./sftp.ps1 servername username password source_file destination```
 
 or for Powershell 7:
+
 ```pwsh ./sftp.ps1 servername username password source_file destination```
