@@ -7,5 +7,5 @@ It installs the [Posh-SSH](https://github.com/darkoperator/Posh-SSH) module if i
 To run:
 
 ```
-powershell ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder" -log "log_file_name"
+powershell ./sftp.ps1 -hostname "servername" -login "username" -password "password" -path "source file" -destination "destination folder"
 ```
